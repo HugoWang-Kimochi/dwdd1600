@@ -1,0 +1,352 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+/* header stuff here */
+header {
+  background-color: #f3efea;
+  padding: 1rem 10px;
+  border-bottom: 2px solid #d8d2c8;
+}
+
+header span:first-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4a3426;
+}
+
+header span:last-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #596e53;
+}
+
+/* navigation content stuff here */
+nav {
+  background-color: #f3efea;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #d8d2c8;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 10px;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 0.9rem 1.2rem;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4a3426;
+  border-radius: 8px;
+}
+
+/* active page */
+nav li.active a {
+  background-color: #4a3426;
+  color: #f3efea;
+}
+
+/* hover state */
+nav li a:hover {
+  background-color: #8c6239;
+  color: white;
+}
+
+/* main content stuff here */
+main {
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid #d8d2c8;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+/* headings */
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #4a3426;
+}
+
+main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #8c6239;
+  margin-bottom: 0.3rem;
+}
+
+/* paragraph styling */
+main p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* ordered list */
+main ol {
+  padding: 0.8rem 30px;
+  background-color: #f3efea;
+  border-radius: 10px;
+}
+
+/* unordered list */
+main ul {
+  list-style-type: square; /* changed bullet type */
+  margin-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* definition list */
+main dl {
+  background-color: #f3efea;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d8d2c8;
+}
+
+main dl dt {
+  color: #4a3426;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+main dl dd {
+  color: #596e53;
+  margin-left: 15px;
+  font-size: 0.95rem;
+}
+
+/* inline tags */
+main strong {
+  font-weight: 700;
+  color: #4a3426;
+}
+
+main em {
+  font-style: italic;
+}
+
+/* address styling */
+main address {
+  font-style: normal;
+  background-color: #f3efea;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #8c6239;
+  width: 220px;
+}
+
+/* content links */
+main a {
+  color: #596e53;
+}
+
+main a:hover {
+  color: #8c6239;
+}
+
+/* footer stuff here */
+footer {
+  background-color: #f3efea;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: #4a3426;
+  border-top: 2px solid #d8d2c8;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* header stuff here */
+header {
+  background-color: #f3efea;
+  padding: 1rem 10px;
+  border-bottom: 2px solid #d8d2c8;
+}
+
+header span:first-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4a3426;
+}
+
+header span:last-child {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #596e53;
+}
+
+/* navigation content stuff here */
+nav {
+  background-color: #f3efea;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #d8d2c8;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 10px;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 0.9rem 1.2rem; /* meets 48px height */
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4a3426;
+  border-radius: 8px;
+}
+
+/* active page */
+nav li.active a {
+  background-color: #4a3426;
+  color: #f3efea;
+}
+
+/* hover state */
+nav li a:hover {
+  background-color: #8c6239;
+  color: white;
+}
+
+/* main content stuff here */
+main {
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid #d8d2c8;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+/* headings */
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #4a3426;
+}
+
+main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #8c6239;
+  margin-bottom: 0.3rem;
+}
+
+/* paragraph styling */
+main p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* ordered list */
+main ol {
+  padding: 0.8rem 30px;
+  background-color: #f3efea;
+  border-radius: 10px;
+}
+
+/* unordered list */
+main ul {
+  list-style-type: square; /* changed bullet type */
+  margin-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* definition list */
+main dl {
+  background-color: #f3efea;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d8d2c8;
+}
+
+main dl dt {
+  color: #4a3426;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+main dl dd {
+  color: #596e53;
+  margin-left: 15px;
+  font-size: 0.95rem;
+}
+
+/* inline tags */
+main strong {
+  font-weight: 700;
+  color: #4a3426;
+}
+
+main em {
+  font-style: italic;
+}
+
+/* address styling */
+main address {
+  font-style: normal;
+  background-color: #f3efea;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #8c6239;
+  width: 400px;
+}
+
+/* content links */
+main a {
+  color: #596e53;
+}
+
+main a:hover {
+  color: #8c6239;
+}
+
+/* footer stuff here */
+footer {
+  background-color: #f3efea;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: #4a3426;
+  letter-spacing: 1px;
+  border-top: 2px solid #d8d2c8;
+}
+
+footer p {
+  margin: 0;
+}
