@@ -28,9 +28,8 @@ header span:last-child {
 /* navigation content stuff here */
 nav {
   background-color: #f3efea;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
   border: 1px solid #d8d2c8;
   border-radius: 12px;
   margin-top: 10px;
@@ -41,7 +40,6 @@ nav ul {
   padding: 0 10px;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 10px;
 }
