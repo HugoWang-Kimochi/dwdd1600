@@ -11,18 +11,11 @@ header {
   border-bottom: 2px solid #d8d2c8;
 }
 
-header span:first-child {
+header span {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: #4a3426;
-}
-
-header span:last-child {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: #596e53;
 }
 
 /* navigation content stuff here */
