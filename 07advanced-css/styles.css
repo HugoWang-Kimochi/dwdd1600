@@ -1,0 +1,360 @@
+/* Prevent Problem on Different Browsers */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3efea;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+/* header stuff here */
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f3efea;
+  padding: 1rem 10px;
+  border-bottom: 2px solid #d8d2c8;
+}
+
+.tagline {
+  margin: 0;
+  color: #8c6239;
+  font-size: 0.9rem;
+}
+
+header span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4a3426;
+}
+
+/* navigation content stuff here */
+nav {
+  background: linear-gradient(to bottom, #f7f2ec, #eee4d8);
+  border: 1px solid #d8d2c8;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #4a3426;
+}
+
+/* phone */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 0.9rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e7ddd2;
+  }
+
+  nav li.active a {
+    background-color: #4a3426;
+    color: #f3efea;
+  }
+}
+
+/* tablet + desktop */
+@media only screen and (min-width: 801px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  nav a {
+    min-height: 48px;
+    line-height: 48px;
+    padding: 0 1.2rem;
+    border-radius: 8px;
+  }
+
+  nav li.active a {
+    background-color: #4a3426;
+    color: #f3efea;
+  }
+
+  nav a:hover {
+    background-color: #8c6239;
+    color: white;
+  }
+}
+
+/* main content stuff here */
+main {
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid #d8d2c8;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+/* headings */
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #4a3426;
+}
+
+main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #8c6239;
+  margin-bottom: 0.3rem;
+}
+
+/* paragraph styling */
+main p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* ordered list */
+main ol {
+  padding: 0.8rem 30px;
+  background-color: #f3efea;
+  border-radius: 10px;
+}
+
+/* unordered list */
+main ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* definition list */
+main dl {
+  background-color: #f3efea;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d8d2c8;
+}
+
+main dl dt {
+  color: #4a3426;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+main dl dd {
+  color: #596e53;
+  margin-left: 15px;
+  font-size: 0.95rem;
+}
+
+/* inline tags */
+main strong {
+  font-weight: 700;
+  color: #4a3426;
+}
+
+main em {
+  font-style: italic;
+}
+
+/* address styling */
+main address {
+  font-style: normal;
+  background-color: #f3efea;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #8c6239;
+  width: 400px;
+}
+
+/* content links */
+main a {
+  color: #596e53;
+}
+
+main a:hover {
+  color: #8c6239;
+}
+
+/* hero image stuff here */
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+/* main image stuff here */
+figure.wrapped {
+  float: right;
+  width: 25%;
+  margin: 0 0 12px 18px;
+  padding: 10px;
+  background: #f3efea;
+  border: 1px solid #d8d2c8;
+  border-radius: 8px;
+}
+
+figure.wrapped img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+figure.wrapped figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #4a3426;
+}
+
+/* gallery stuff here */
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}
+
+div.gallery figure {
+  margin: 0;
+  width: 200px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #d8d2c8;
+  background: #f3efea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div.gallery figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #4a3426;
+  margin-top: 6px;
+}
+
+div.gallery img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(74, 52, 38, 0.18);
+}
+
+/* form stuff here */
+.myForm {
+  background-color: #fdfaf7;
+  border: 1px solid #d8d2c8;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.myForm fieldset {
+  border: 1px solid #8c6239;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f3efea;
+}
+
+.myForm legend {
+  font-family: "Montserrat", sans-serif;
+  color: #4a3426;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.myForm label {
+  display: block;
+  margin-bottom: 0.9rem;
+  color: #4a3426;
+  font-weight: 600;
+}
+
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm input[type="tel"],
+.myForm select,
+.myForm textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.35rem;
+  padding: 0.7rem;
+  border: 1px solid #d8d2c8;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.myForm textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.myForm input[type="submit"] {
+  background-color: #4a3426;
+  color: white;
+  border: 1px solid #4a3426;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.myForm input[type="submit"]:hover {
+  background-color: #8c6239;
+  border-color: #8c6239;
+}
+
+/* footer stuff here */
+footer {
+  background-color: #f3efea;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: #4a3426;
+  border-top: 2px solid #d8d2c8;
+  clear: both; /* ensure footer is below floated content */
+}
+
+footer p {
+  margin: 0;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
