@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hugo Wang" />
+    <meta name="description" content="Survey and Sharing Your thoughts" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Load Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS File implement-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="images/x-icon" href="favicon.ico" />
+
+    <title>Toffee's Dogs Care: Survey</title>
+  </head>
+
+  <body>
+    <!-- start the page head-->
+    <header>
+      <img
+        src="images/logo.webp"
+        alt="Toffee's Dogs Care Logo"
+        width="99"
+        height="100"
+      />
+      <span>Toffee's Dogs Care</span>
+      <p class="tagline">A simple guide for first-time dog owners</p>
+    </header>
+
+    <!-- start the page navigation-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="training.html">Training </a></li>
+        <li><a href="breeds.html">Breeds</a></li>
+        <li><a href="care.html">Puppy Guide</a></li>
+        <li><a href="park.html">Parks</a></li>
+        <li class="active"><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+
+    <!-- start the page content-->
+    <main>
+      <h1>Survey</h1>
+
+      <form method="get" class="myForm" action="thanks.html">
+        <fieldset>
+          <legend>Dog Owner Information</legend>
+          <label
+            >First Name*<input type="text" name="first_name" required
+          /></label>
+          <label
+            >Last Name*<input type="text" name="last_name" required
+          /></label>
+          <label
+            >Email Address*<input
+              type="email"
+              name="email"
+              placeholder="Toffee@something.com"
+              required
+          /></label>
+          <label
+            >Phone Number*<input
+              type="tel"
+              name="phone"
+              placeholder="801-666-1234"
+              required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dog Experience</legend>
+          <label
+            ><input
+              type="radio"
+              name="experience"
+              value="beginner"
+            />Beginner</label
+          >
+          <label
+            ><input type="radio" name="experience" value="some" />Some
+            Experience</label
+          >
+          <label
+            ><input type="radio" name="experience" value="expert" />Very
+            Experienced</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Topics interested in</legend>
+
+          <label>
+            <input type="checkbox" name="training" value="chosen" />
+            Dog Training
+          </label>
+
+          <label>
+            <input type="checkbox" name="nutrition" value="chosen" />
+            Dog Nutrition
+          </label>
+
+          <label>
+            <input type="checkbox" name="health" value="chosen" />
+            Dog Health
+          </label>
+
+          <label>
+            <input type="checkbox" name="breeds" value="chosen" />
+            Dog Breeds
+          </label>
+
+          <label>
+            What size dog do you prefer?
+            <select name="dog_size">
+              <option value="none">Select one</option>
+              <option value="small">Small Dog (0-20lbs)</option>
+              <option value="medium">Medium Dog (21-50lbs)</option>
+              <option value="large">Large Dog (51-90lbs)</option>
+              <option value="x_large">Extra Large Dog (91+lbs)</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <label
+          >Additional Comments
+          <textarea
+            name="comments"
+            placeholder="Tell us about your dog or any dog care challenges you have."
+          ></textarea>
+        </label>
+
+        <input type="submit" value="Submit Survey" />
+      </form>
+    </main>
+
+    <!-- start the page footer-->
+    <footer>
+      <p>&copy; 2026 &bull; Hugo Wang &bull; Toffee's Dog Care</p>
+    </footer>
+  </body>
+</html>
